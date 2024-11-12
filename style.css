@@ -669,7 +669,7 @@ nav {
   }
 
   .hero-section{
-    height: 90vh;
+    height: 95vh;
   }
 
   .hero-overlay{
@@ -677,7 +677,7 @@ nav {
   }
 
   .hero-logo{
-    align-items: start;
+    display: flex;
   }
 
   .hero-content h1 {
