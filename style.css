@@ -672,14 +672,6 @@ nav {
     height: 95vh;
   }
 
-  .hero-overlay{
-    padding: 8px;
-  }
-
-  .hero-logo{
-    display: flex;
-  }
-
   .hero-content h1 {
     font-size: 24px;
   }
