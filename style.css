@@ -630,6 +630,9 @@ nav {
 }
 
 @media screen and (max-width: 480px) {
+  nav{
+    padding: 8px 8px;
+  }
   .navbar-logo img {
     height: 32px;
   }
@@ -663,6 +666,18 @@ nav {
 
   .hamburger-menu {
     display: block;
+  }
+
+  .hero-section{
+    height: 90vh;
+  }
+
+  .hero-overlay{
+    padding: 8px;
+  }
+
+  .hero-logo{
+    align-items: start;
   }
 
   .hero-content h1 {
