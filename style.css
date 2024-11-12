@@ -638,6 +638,10 @@ nav {
     font-size: 14px;
   }
 
+  .navbar-logo-tittle p{
+    font-size: 12px;
+  }
+
   .navbar-nav {
     display: none;
     flex-direction: column;
@@ -692,6 +696,7 @@ nav {
     overflow-y: auto;
     max-height: 400px; /* Adjust as needed */
     padding: 0;
+    border-radius: 0;
   }
 
   .grid p {
