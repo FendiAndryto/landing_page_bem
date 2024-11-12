@@ -571,7 +571,9 @@ nav {
 
   /* Hero Section */
   .hero-section {
-    height: 100vh; /* Adjust height to fit smaller screens */
+    max-height: 50vh; /* Adjust height to fit smaller screens */
+    object-fit: cover;
+    width: 100%;
   }
 
   .hero-content h1 {
@@ -669,7 +671,9 @@ nav {
   }
 
   .hero-section{
-    height: 95vh;
+    max-height: 50vh;
+    object-fit: cover;
+    width: 100%;
   }
 
   .hero-content h1 {
