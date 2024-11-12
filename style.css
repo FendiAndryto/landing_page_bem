@@ -311,11 +311,7 @@ nav {
   overflow-x: auto;
   gap: 8px;
   padding-bottom: 10px;
-  scrollbar-width: none;
-}
-
-.section-member__wrapper::-webkit-scrollbar {
-  display: none;
+  scrollbar-width: thin;
 }
 
 .section-member__card {
@@ -386,11 +382,7 @@ nav {
   overflow-x: auto;
   gap: 8px;
   padding-bottom: 10px;
-  scrollbar-width: none;
-}
-
-.section-featured__wrapper::-webkit-scrollbar {
-  display: none;
+  scrollbar-width: thin;
 }
 
 .section-featured__card {
