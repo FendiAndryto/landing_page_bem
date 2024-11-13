@@ -51,7 +51,7 @@ nav {
 .navbar-nav a {
   text-decoration: none;
   font-size: 16px;
-  color: black;
+  color: #191919;
   font-weight: 500;
 }
 
@@ -193,7 +193,7 @@ nav {
   font-size: 2rem;
   font-weight: bold;
   margin-bottom: 32px;
-  color: black;
+  color: #191919;
   text-align: center;
 }
 
@@ -354,11 +354,27 @@ nav {
   font-size: 1rem;
   color: #333;
   font-weight: 600;
+  white-space: nowrap; /* Mencegah teks membungkus ke baris baru */
+  overflow: hidden; /* Menyembunyikan teks yang melampaui lebar elemen */
+  text-overflow: ellipsis; /* Menambahkan ellipsis (...) pada teks yang terpotong */
+  width: 100%; /* Pastikan elemen memiliki lebar yang diperlukan untuk efek truncate */
+  display: block; /* Pastikan elemen ini ditampilkan sebagai blok */
 }
 
 .section-member__name {
   font-size: 1rem;
   color: #555;
+  white-space: nowrap; /* Mencegah teks membungkus ke baris baru */
+  overflow: hidden; /* Menyembunyikan teks yang melampaui lebar elemen */
+  text-overflow: ellipsis; /* Menambahkan ellipsis (...) pada teks yang terpotong */
+  width: 100%; /* Pastikan elemen memiliki lebar yang diperlukan untuk efek truncate */
+  display: block; /* Pastikan elemen ini ditampilkan sebagai blok */
+}
+
+.section-member__role:active,
+.section-member__name:active {
+  white-space: normal; /* Mengizinkan teks membungkus ke baris baru */
+  overflow: visible; /* Menampilkan seluruh teks */
 }
 
 /* section event */
