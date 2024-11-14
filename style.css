@@ -66,10 +66,11 @@ nav {
 }
 
 /* Hero section */
-.hero-section {   
+.hero-section {
   position: relative;
   height: 100vh;
-  background: url("assets/images/background.jpg") no-repeat center center/cover;
+  background: url("assets/images/bg-hero-section.png") no-repeat center
+    center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -99,7 +100,6 @@ nav {
 
 .hero-content p {
   font-size: 18px;
-  margin-bottom: 20px;
 }
 
 .hero-logo {
@@ -108,7 +108,7 @@ nav {
   left: 64px;
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: 4px;
 }
 
 .hero-logo img {
@@ -357,8 +357,9 @@ nav {
   white-space: nowrap; /* Mencegah teks membungkus ke baris baru */
   overflow: hidden; /* Menyembunyikan teks yang melampaui lebar elemen */
   text-overflow: ellipsis; /* Menambahkan ellipsis (...) pada teks yang terpotong */
-  width: 100%; /* Pastikan elemen memiliki lebar yang diperlukan untuk efek truncate */
-  display: block; /* Pastikan elemen ini ditampilkan sebagai blok */
+  width: 100%;
+  display: block;
+  cursor: pointer; /* Menunjukkan elemen dapat diklik */
 }
 
 .section-member__name {
@@ -371,8 +372,7 @@ nav {
   display: block; /* Pastikan elemen ini ditampilkan sebagai blok */
 }
 
-.section-member__role:active,
-.section-member__name:active {
+.section-member__expanded {
   white-space: normal; /* Mengizinkan teks membungkus ke baris baru */
   overflow: visible; /* Menampilkan seluruh teks */
 }
@@ -721,13 +721,22 @@ nav {
   }
 
   .hero-section {
-    max-height: 90vh;
+    max-height: 95vh;
     object-fit: cover;
     width: 100%;
   }
 
   .hero-content h1 {
     font-size: 24px;
+  }
+
+  .hero-logo {
+    position: absolute;
+    bottom: 32px;
+    left: 34px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
   }
 
   .hero-logo img {
